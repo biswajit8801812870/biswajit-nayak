@@ -2,8 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BISWAJIT NAYAK // PLAYER PROFILE</title>
+
+  <meta property="og:title" content="Biswajit Nayak — Program · Project · Product Manager">
+  <meta property="og:description" content="13+ years | PMP® | SAFe 6 | CSM | Geospatial AI | MLOps | $5M Portfolio | Apple Maps | PSA BDP">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://biswajit8801812870.github.io/portfolio" />
+  <meta property="og:image" content="https://biswajit8801812870.github.io/portfolio/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Biswajit Nayak — Senior PM | PMP® | SAFe 6">
+  <meta name="twitter:description" content="Digital Transformation Leader | Geospatial AI | MLOps | Supply Chain SaaS | 13+ Years">
+  <meta name="description" content="Biswajit Nayak — Senior Program Project Product Manager with 13+ years. PMP®, SAFe 6, CSM certified. Expert in Geospatial AI, MLOps, Digital Transformation, Supply Chain SaaS. Based in Bengaluru.">
+  <meta name="keywords" content="Biswajit Nayak, Program Manager, Project Manager, Product Manager, PMP, SAFe 6, CSM, Geospatial AI, MLOps, Digital Transformation, Bengaluru">
+  <meta name="author" content="Biswajit Nayak">
+
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://www.linkedin.com https://linkedin.com https://*.linkedin.com">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biswajit Nayak | Senior PM · PMP® · SAFe 6 | Bengaluru</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -117,7 +132,7 @@ nav {
 
 /* ── SECTION BASE ── */
 section { position: relative; z-index: 10; padding: 6rem 3rem; }
-.inner { max-width: 1100px; margin: 0 auto; }
+.inner { max-width: 1100px; margin: 0 auto; width: 100%; }
 .sec-tag {
   font-family: var(--mono); font-size: 0.7rem; color: var(--green);
   letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.75rem;
@@ -543,16 +558,6 @@ footer a:hover { color: var(--cyan); }
   0%{stroke-dashoffset:200} 100%{stroke-dashoffset:0}
 }
  50%{opacity:1;r:4} }
-@keyframes helmetFloat {
-  0%,100%{transform:translateY(0) rotateY(0deg)}
-  25%{transform:translateY(-8px) rotateY(3deg)}
-  75%{transform:translateY(4px) rotateY(-2deg)}
-}
-@keyframes reactorPulse {
-  0%,100%{box-shadow:0 0 20px var(--cyan),0 0 40px rgba(0,245,255,0.5); transform:translateX(-50%) scale(1)}
-  50%{box-shadow:0 0 35px var(--cyan),0 0 70px rgba(0,245,255,0.8); transform:translateX(-50%) scale(1.15)}
-}
-@keyframes hudBlink { 0%,90%,100%{opacity:0.7} 95%{opacity:0.1} }
 @keyframes eyeGlow {
   0%,100%{fill:rgba(0,245,255,0.9); filter:drop-shadow(0 0 6px var(--cyan))}
   50%{fill:rgba(0,245,255,1); filter:drop-shadow(0 0 14px var(--cyan)) drop-shadow(0 0 28px rgba(0,245,255,0.6))}
@@ -678,15 +683,7 @@ footer a:hover { color: var(--cyan); }
 }
 .ai-road-desc { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); }
 
-@media(max-width:900px){
-  .ai-grid { grid-template-columns: 1fr 1fr; }
-  .ai-grid.four { grid-template-columns: 1fr 1fr; }
-  .ai-roadmap { grid-template-columns: 1fr 1fr; }
-}
-@media(max-width:600px){
-  .ai-grid,.ai-grid.two,.ai-grid.four { grid-template-columns: 1fr; }
-  .ai-roadmap { grid-template-columns: 1fr; }
-}
+
 
 
 /* ══ PHOTO FRAME ══ */
@@ -829,7 +826,223 @@ footer a:hover { color: var(--cyan); }
   .vs-divider::after { left: 100%; }
 }
 
+
+/* ════════════════════════════════
+   MOBILE RESPONSIVE — FULL AUDIT
+   ════════════════════════════════ */
+
+/* ── TABLET (≤900px) ── */
+@media (max-width: 900px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1.2rem; }
+  .nav-links a { font-size: 0.68rem; }
+  section { padding: 4rem 1.5rem; }
+  #hero { padding: 6rem 1.5rem 3rem; }
+
+  .hero-flex { flex-direction: column; align-items: center; gap: 2rem; }
+  .hero-avatar-col { flex-direction: row; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; }
+  .vs-divider { writing-mode: horizontal-tb; padding: 0 0.5rem; }
+  .vs-divider::before { bottom: auto; left: auto; right: 100%; top: 50%; width: 20px; height: 1px; }
+  .vs-divider::after  { top: auto;  left: 100%; bottom: auto; width: 20px; height: 1px; }
+
+  .hero-inner-content { text-align: center; }
+  .available-banner { justify-content: center; }
+  .hero-name { font-size: clamp(2.8rem, 10vw, 5rem); }
+  .player-rank { justify-content: center; }
+  .hero-subtitle { text-align: center; }
+  .hero-cta { justify-content: center; }
+  .player-stats { grid-template-columns: repeat(2,1fr); max-width: 100%; }
+
+  /* Shrink orbital rings on tablet */
+  .im-ring.o1 { width: 230px; height: 230px; }
+  .im-ring.o2 { width: 256px; height: 256px; }
+  .im-ring.o3 { width: 280px; height: 280px; }
+  .im-wrap { width: 240px; height: 290px; }
+
+  /* Radar */
+  .radar-wrap canvas { width: 280px !important; height: 260px !important; }
+
+  /* Skills */
+  .skill-layout { grid-template-columns: 1fr; }
+
+  /* Timeline */
+  .exp-header { flex-direction: column; gap: 0.5rem; }
+
+  /* Certs */
+  .cert-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Trophies */
+  .trophy-grid { grid-template-columns: 1fr; }
+
+  /* AI grids */
+  .ai-grid { grid-template-columns: 1fr 1fr; }
+  .ai-grid.four { grid-template-columns: 1fr 1fr; }
+  .ai-roadmap { grid-template-columns: 1fr 1fr; }
+
+  /* Contact */
+  .contact-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+  .footer-sys { justify-content: center; }
+
+  /* HUD corners hidden on tablet */
+  .hud-corner { display: none; }
+}
+
+/* ── MOBILE (≤600px) ── */
+@media (max-width: 600px) {
+  /* Nav - hide links, show hamburger feel */
+  .nav-links { display: none; }
+  .nav-id { font-size: 1rem; }
+  nav { padding: 0.9rem 1rem; }
+
+  /* Hero */
+  #hero { padding: 5.5rem 1rem 3rem; }
+  section { padding: 3rem 1rem; }
+  .hero-name { font-size: clamp(2.4rem, 13vw, 4rem); }
+  .hero-subtitle { font-size: 0.72rem; }
+  .hero-stats { flex-direction: column; gap: 1rem; }
+  .available-banner { font-size: 0.58rem; letter-spacing: 0.08em; padding: 0.25rem 0.6rem; text-align: center; }
+
+  /* Avatar column: stack vertically on phone */
+  .hero-avatar-col { flex-direction: column; gap: 1.5rem; }
+  .vs-divider { writing-mode: horizontal-tb; padding: 0 1rem; }
+  .vs-divider::before { bottom: auto; left: auto; right: 100%; top: 50%; width: 20px; height: 1px; }
+  .vs-divider::after  { top: auto;  left: 100%; bottom: auto; width: 20px; height: 1px; }
+
+  /* Shrink helmet further on phone */
+  .im-wrap { width: 200px; height: 250px; transform: scale(0.88); transform-origin: center; }
+  .im-ring.o1 { width: 192px; height: 192px; }
+  .im-ring.o2 { width: 214px; height: 214px; }
+  .im-ring.o3 { width: 234px; height: 234px; }
+  .im-helmet { transform-origin: center; }
+
+  /* Photo */
+  .photo-frame { width: 120px; height: 140px; margin-bottom: 2.5rem; }
+  .photo-hex-clip { width: 120px; height: 140px; }
+
+  /* Player stats */
+  .player-stats { grid-template-columns: 1fr 1fr; }
+  .pstat-val { font-size: 1.4rem; }
+  .pstat-label { font-size: 0.55rem; }
+
+  /* Buttons */
+  .hero-cta { flex-direction: column; gap: 0.75rem; }
+  .btn-cyber { width: 100%; text-align: center; padding: 0.9rem 1rem; }
+
+  /* Radar - fit to phone screen */
+  .radar-wrap { overflow-x: auto; }
+  .radar-wrap canvas { width: 260px !important; height: 240px !important; }
+
+  /* Skills tags wrap nicely */
+  .tag-cloud { gap: 0.4rem; }
+  .ctag { font-size: 0.65rem; padding: 0.25rem 0.55rem; }
+
+  /* XP bars */
+  .xp-name { font-size: 0.78rem; }
+
+  /* Experience */
+  .exp-company { font-size: 0.8rem; }
+  .t-role, .exp-role { font-size: 1.1rem; }
+  .exp-body { padding: 1rem; }
+  .exp-header { padding: 1rem; }
+  .exp-bullets li { font-size: 0.8rem; }
+
+  /* Certs */
+  .cert-grid { grid-template-columns: 1fr 1fr; }
+  .cert-card { padding: 1.2rem 0.8rem; }
+  .cert-name { font-size: 0.75rem; }
+
+  /* AI cards */
+  .ai-grid, .ai-grid.two, .ai-grid.four { grid-template-columns: 1fr; }
+  .ai-roadmap { grid-template-columns: 1fr 1fr; }
+  .ai-card { padding: 1.2rem 1rem; }
+  .ai-card-title { font-size: 0.72rem; }
+  .ai-card-desc { font-size: 0.68rem; }
+
+  /* Trophies */
+  .trophy { flex-direction: column; gap: 0.75rem; align-items: flex-start; }
+  .trophy-num { font-size: 1.8rem; }
+
+  /* Contact form */
+  .contact-form { padding: 1.5rem 1rem; }
+
+  /* Section titles */
+  h2.sec-title { font-size: 1.6rem; }
+
+  /* Cursor hidden on touch */
+  #cursor { display: none; }
+  .cursor-trail { display: none; }
+
+  /* Boot screen */
+  #boot-logo { font-size: 2rem; }
+  #boot-log div { font-size: 0.65rem; }
+  #boot-bar-wrap { width: 240px; }
+}
+
+/* ── VERY SMALL (≤380px — iPhone SE etc) ── */
+@media (max-width: 380px) {
+  .hero-name { font-size: 2.2rem; }
+  .im-wrap { transform: scale(0.78); }
+  .photo-frame { width: 100px; height: 118px; }
+  .photo-hex-clip { width: 100px; height: 118px; }
+  .cert-grid { grid-template-columns: 1fr; }
+  .ai-roadmap { grid-template-columns: 1fr; }
+  .player-stats { grid-template-columns: 1fr 1fr; }
+}
+
+
+/* ── HAMBURGER MENU ── */
+.hamburger {
+  display: none; flex-direction: column; gap: 5px;
+  cursor: pointer; padding: 4px; z-index: 200;
+}
+.hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: var(--cyan); border-radius: 1px;
+  transition: all 0.3s;
+}
+.mobile-menu {
+  display: none; position: fixed; top: 56px; left: 0; right: 0; z-index: 499;
+  background: rgba(6,12,20,0.97); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  flex-direction: column; padding: 1rem 1.5rem; gap: 0;
+}
+.mobile-menu a {
+  font-family: var(--mono); font-size: 0.82rem; color: var(--muted);
+  text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.9rem 0; border-bottom: 1px solid var(--border);
+  transition: color 0.2s;
+}
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:hover { color: var(--cyan); }
+.mobile-menu.open { display: flex; }
+@media (max-width: 600px) {
+  .hamburger { display: flex; }
+  .nav-links { display: none !important; }
+}
+
+
+/* iOS input zoom fix — font-size must be ≥16px */
+@media (max-width: 600px) {
+  .field input, .field textarea {
+    font-size: 16px !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #boot { padding: 1rem; }
+  #boot-log { max-width: 100%; }
+  #boot-log div { font-size: 0.62rem; }
+}
+
 </style>
+
+  <style>
+    html { scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+  </style>
 </head>
 <body>
 
@@ -876,8 +1089,19 @@ footer a:hover { color: var(--cyan); }
     <li><a href="#achievements">trophies</a></li>
     <li><a href="#contact">connect</a></li>
   </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
   <div class="nav-status"><div class="status-dot"></div> ONLINE // BENGALURU</div>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#skills"       onclick="closeMenu()">Skills</a>
+  <a href="#experience"   onclick="closeMenu()">Experience</a>
+  <a href="#certs"        onclick="closeMenu()">Certifications</a>
+  <a href="#ai-skills"    onclick="closeMenu()">AI Skills</a>
+  <a href="#achievements" onclick="closeMenu()">Trophies</a>
+  <a href="#contact"      onclick="closeMenu()">Contact</a>
+</div>
 
 <!-- HERO -->
 <section id="hero">
@@ -1586,7 +1810,7 @@ footer a:hover { color: var(--cyan); }
           <a href="mailto:biswajitgis.nayak@gmail.com" class="contact-link">
             <span class="contact-link-ico">✉</span> biswajitgis.nayak@gmail.com
           </a>
-          <a href="https://linkedin.com/in/biswajit-nayak-pmp-®-1219174b" target="_blank" class="contact-link">
+          <a href="https://www.linkedin.com/in/biswajit-nayak-pmp-%C2%AE-1219174b" target="_blank" rel="noopener" target="_blank" class="contact-link">
             <span class="contact-link-ico">in</span> LinkedIn Profile
           </a>
           <a href="tel:+918801812870" class="contact-link">
@@ -1599,9 +1823,9 @@ footer a:hover { color: var(--cyan); }
       </div>
       <div class="contact-form reveal">
         <div class="form-title">&gt; SEND MESSAGE</div>
-        <div class="field"><label>Identifier (Name)</label><input type="text" placeholder="Your name"></div>
-        <div class="field"><label>Comms Address (Email)</label><input type="email" placeholder="your@email.com"></div>
-        <div class="field"><label>Message Payload</label><textarea rows="4" placeholder="Hi Biswajit, I'd like to connect about..."></textarea></div>
+        <div class="field"><label>Identifier (Name)</label><input type="text" placeholder="Recruiter / Hiring Manager name"></div>
+        <div class="field"><label>Comms Address (Email)</label><input type="email" placeholder="your.email@company.com"></div>
+        <div class="field"><label>Message Payload</label><textarea rows="4" placeholder="Hi Biswajit, I came across your profile and would like to discuss..."></textarea></div>
         <button class="btn-cyber primary btn-send" onclick="alert('TRANSMISSION SENT ✓\nBiswajit will respond shortly.')">TRANSMIT &gt;&gt;</button>
       </div>
     </div>
@@ -1674,7 +1898,7 @@ function initMatrix() {
       drops[i]++;
     });
   }
-  setInterval(draw, 50);
+  setInterval(draw, window.innerWidth < 600 ? 100 : 50);
   window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -1852,7 +2076,7 @@ function startSite() {
     const ctx = c.getContext('2d');
     const resize = () => { c.width = window.innerWidth; c.height = window.innerHeight; };
     resize(); window.addEventListener('resize', resize);
-    const pts = Array.from({length:55}, () => ({
+    const pts = Array.from({length: window.innerWidth < 600 ? 25 : 55}, () => ({
       x: Math.random()*window.innerWidth,
       y: Math.random()*window.innerHeight,
       vx: (Math.random()-0.5)*0.4,
@@ -1902,6 +2126,16 @@ function startSite() {
   });
 
   // ── CLICK RIPPLE ──
+  // Touch ripple support for mobile
+  document.addEventListener('touchstart', e => {
+    const t = e.touches[0];
+    const r = document.createElement('div');
+    r.className = 'ripple';
+    r.style.left = t.clientX+'px';
+    r.style.top = t.clientY+'px';
+    document.body.appendChild(r);
+    setTimeout(()=>r.remove(), 700);
+  }, {passive:true});
   document.addEventListener('click', e => {
     const r = document.createElement('div');
     r.className = 'ripple';
@@ -1941,13 +2175,14 @@ function startSite() {
     const canvas = document.getElementById('skill-radar');
     if(!canvas) return;
     const ctx = canvas.getContext('2d');
-    const W=220, H=220, cx=W/2, cy=H/2, R=88;
+    const W=320, H=300, cx=W/2, cy=H/2, R=96;
     canvas.width=W; canvas.height=H;
-    const labels = ['Program Mgmt','Product','Agile/SAFe','AI/MLOps','Stakeholder','Budget'];
+    canvas.style.width='320px'; canvas.style.height='300px';
+    const labels = ['Program Mgmt','Product','Agile/SAFe','AI/MLOps','Stakeholder Mgmt','Budget/P&L'];
     const values = [0.97, 0.82, 0.96, 0.90, 0.97, 0.94];
     const N = labels.length;
     const angle = i => (i/N)*Math.PI*2 - Math.PI/2;
-    // grid
+    // grid rings
     [0.25,0.5,0.75,1].forEach(r=>{
       ctx.beginPath();
       for(let i=0;i<N;i++){
@@ -1964,7 +2199,7 @@ function startSite() {
       ctx.lineTo(cx+Math.cos(a)*R, cy+Math.sin(a)*R);
       ctx.strokeStyle='rgba(0,245,255,0.15)'; ctx.lineWidth=0.5; ctx.stroke();
     }
-    // filled area
+    // filled polygon
     ctx.beginPath();
     for(let i=0;i<N;i++){
       const a=angle(i), v=values[i];
@@ -1973,21 +2208,41 @@ function startSite() {
     }
     ctx.closePath();
     ctx.fillStyle='rgba(0,245,255,0.08)'; ctx.fill();
-    ctx.strokeStyle='rgba(0,245,255,0.7)'; ctx.lineWidth=1.2; ctx.stroke();
-    // dots
+    ctx.strokeStyle='rgba(0,245,255,0.7)'; ctx.lineWidth=1.5; ctx.stroke();
+    // dots on vertices
     for(let i=0;i<N;i++){
       const a=angle(i), v=values[i];
-      ctx.beginPath();
-      ctx.arc(cx+Math.cos(a)*R*v, cy+Math.sin(a)*R*v, 3,0,Math.PI*2);
-      ctx.fillStyle='var(--cyan)' ; ctx.fill();
+      const px=cx+Math.cos(a)*R*v, py=cy+Math.sin(a)*R*v;
+      ctx.beginPath(); ctx.arc(px, py, 3.5,0,Math.PI*2);
+      ctx.fillStyle='rgba(0,245,255,1)'; ctx.fill();
+      // glow
+      ctx.beginPath(); ctx.arc(px, py, 7,0,Math.PI*2);
+      ctx.fillStyle='rgba(0,245,255,0.12)'; ctx.fill();
     }
-    // labels
-    ctx.font='500 9px Orbitron,monospace';
-    ctx.fillStyle='rgba(200,232,255,0.7)'; ctx.textAlign='center';
+    // labels — smart alignment based on angle quadrant
+    ctx.font = '600 8.5px Orbitron, monospace';
+    ctx.fillStyle = 'rgba(200,232,255,0.85)';
+    const PAD = 22;
+    for(let i=0;i<N;i++){
+      const a = angle(i);
+      const lx = cx + Math.cos(a)*(R+PAD);
+      const ly = cy + Math.sin(a)*(R+PAD);
+      // align based on x position
+      if(lx < cx - 10)      ctx.textAlign = 'right';
+      else if(lx > cx + 10) ctx.textAlign = 'left';
+      else                   ctx.textAlign = 'center';
+      // baseline based on y
+      ctx.textBaseline = ly < cy - 10 ? 'bottom' : ly > cy + 10 ? 'top' : 'middle';
+      ctx.fillText(labels[i].toUpperCase(), lx, ly);
+    }
+    // score % labels on each axis at 75% mark
+    ctx.font = '500 7px Orbitron, monospace';
+    ctx.fillStyle = 'rgba(0,255,136,0.7)';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    const pctLabels = ['97%','82%','96%','90%','97%','94%'];
     for(let i=0;i<N;i++){
       const a=angle(i);
-      const x=cx+Math.cos(a)*(R+16), y=cy+Math.sin(a)*(R+16)+3;
-      ctx.fillText(labels[i].toUpperCase(), x, y);
+      ctx.fillText(pctLabels[i], cx+Math.cos(a)*(R*0.62), cy+Math.sin(a)*(R*0.62));
     }
   })();
 
